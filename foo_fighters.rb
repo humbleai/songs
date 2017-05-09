@@ -19,11 +19,12 @@ in_thread do
   end
 end
 
-live_loop :sine do
-  use_synth :hollow
-  with_fx :krush do
+
+with_fx :krush do
+  live_loop :sine do
+    use_synth :hollow
     sample :ambi_haunted_hum, attack: 4, release: 4, amp: 6, pan: rrand(-1, 1) if one_in(2)
     play rrand(70, 92), attack: 4, release: 4, amp: 6, pan: rrand(-1, 1) if one_in(3)
     sleep 8
-  end  
+  end
 end
