@@ -1,7 +1,11 @@
+# Sonic Pi v2.11.1
+# listen here: https://soundcloud.com/ugurvu/veering-right
+# 2018-01-09
+
 use_bpm 120
 
-synthring = [:beep, :blade, :dpulse, :dsaw, :dtri,
-             :dull_bell, :fm, :growl, :hoover,
+synthring = [:beep, :dpulse, :dsaw, :dtri,
+             :dull_bell, :fm, :growl,
              :mod_beep, :mod_dsaw, :mod_fm, :mod_pulse,
              :mod_saw, :mod_sine, :mod_tri,
              :pluck, :pretty_bell, :pulse, :saw, :sine, :square,
@@ -46,8 +50,8 @@ end
 with_fx :reverb do
   #stop
   live_loop :slices do
-    with_fx :slicer, phase: [0.25, 0.5].choose do
-      synth synthring.choose, note: noteringsynth.choose, release: 8, cutoff: rrand(30, 100), amp: 0.3  if one_in(3)
+    with_fx :slicer, phase: [0.25, 0.5, 0.75, 1].choose do
+      synth synthring.choose, note: noteringsynth.choose, release: 8, cutoff: rrand(30, 100), amp: 0.3
     end
     sleep 8
   end
