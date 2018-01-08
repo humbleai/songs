@@ -1,3 +1,4 @@
+use_bpm 60
 
 live_loop :drums do
   #stop
@@ -8,7 +9,7 @@ live_loop :drums do
   sleep 0.25
 end
 
-live_loop :hat do
+live_loop :fl do
   #stop
   with_fx :flanger, samplerate:rrand(500, 5000), mix:1 do
     sample :guit_e_slide, cutoff: rrand(20, 120), release: 0.05, amp: 0.4, rate: [-1, 1].choose
