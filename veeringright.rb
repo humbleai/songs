@@ -22,7 +22,7 @@ live_loop :drums1 do
   sample :bd_boom, amp: 2.5
   
   with_fx :echo, phase: 0.125, mix: 0.4 do
-    sample :bd_tek, delay: 0.25, amp: 0.25, sustain: 0, release: 0.1
+    sample :bd_tek, amp: 0.25, sustain: 0, release: 0.1
   end
   
   sleep 0.5
