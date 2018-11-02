@@ -1,7 +1,7 @@
 use_bpm 90
 use_debug false
 
-// LMMS samples
+# LMMS samples
 
 drumsamps = ".../LMMS/drums/"
 basssamps = ".../LMMS/basses/"
@@ -12,7 +12,7 @@ latinsamps = ".../LMMS/latin/"
 miscsamps = ".../LMMS/misc/"
 stringspadssamps = ".../LMMS/stringsnpads/"
 
-//musicradar & samplephonics samples
+# musicradar & samplephonics samples
 ayayay = ".../musicradar-female-vocal-samples/other/bv 1.wav"
 ohohoh = ".../musicradar-vocal-adlib-samples/Words/oh2.wav"
 dadada = ".../samplephonics/RandomPhonics/Oneshots/D3_ScatTaa_SP_01.wav"
