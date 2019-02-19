@@ -1,4 +1,5 @@
 # get FoxDot -> foxdot.org
+# listen here: https://soundcloud.com/ugurvu/dabodabo
 
 p1 >> karp(P[8], oct=[4, 5, 6, 7], dur=1/4, amp=0.4)
 p1.every(4, "oct.trim", 3)
